@@ -29,7 +29,7 @@ class CardActivity : AppCompatActivity() {
                     }
                     is Resource.Success -> {
                         progressBar.isVisible = false
-                        cardRv.adapter = CardAdapter(resource.data)
+                        cardRecyclerView.adapter = CardAdapter(resource.data)
                     }
                     is Resource.Error -> {
                         progressBar.isVisible = false

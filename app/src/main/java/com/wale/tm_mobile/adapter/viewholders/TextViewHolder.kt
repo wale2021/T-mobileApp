@@ -8,7 +8,7 @@ import com.wale.tm_mobile.databinding.ItemTextBinding
 
 class TextViewHolder(private val binding: ItemTextBinding) : BaseViewHolder(binding) {
 
-    override fun loadData(card: CardWrapper) = with(binding.textTv) {
+    override fun loadData(card: CardWrapper) = with(binding.textView) {
         text = card.card.value
         textSize = card.card.attributes?.font?.size?.toFloat() ?: 0f
         setTextColor(Color.parseColor(card.card.attributes?.textColor))

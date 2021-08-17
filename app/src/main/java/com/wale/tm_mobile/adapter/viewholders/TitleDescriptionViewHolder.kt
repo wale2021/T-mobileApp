@@ -10,14 +10,14 @@ class TitleDescriptionViewHolder(
     private val binding: ItemTitleDescriptionBinding
 ) : BaseViewHolder(binding) {
     override fun loadData(card: CardWrapper) = with(binding) {
-        titleTv.text = card.card.title?.value
-        titleTv.textSize = card.card.title?.attributes?.font?.size?.toFloat() ?: 0f
-        titleTv.setTextColor(Color.parseColor(card.card.title?.attributes?.textColor))
+        titleView.text = card.card.title?.value
+        titleView.textSize = card.card.title?.attributes?.font?.size?.toFloat() ?: 0f
+        titleView.setTextColor(Color.parseColor(card.card.title?.attributes?.textColor))
 
-        descriptionTv.text = card.card.description?.value
-        descriptionTv.textSize =
+        descriptionView.text = card.card.description?.value
+        descriptionView.textSize =
             card.card.description?.attributes?.font?.size?.toFloat() ?: 0f
-        descriptionTv.setTextColor(Color.parseColor(card.card.description?.attributes?.textColor))
+        descriptionView.setTextColor(Color.parseColor(card.card.description?.attributes?.textColor))
     }
 
     companion object {

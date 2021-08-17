@@ -13,7 +13,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ProgressBar
-            android:id="@+id/loading_image_pb"
+            android:id="@+id/progress_bar_loading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -22,7 +22,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/card_image_iv"
+            android:id="@+id/card_image_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
@@ -30,20 +30,20 @@
             tools:background="@tools:sample/avatars" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/image_title_tv"
+            android:id="@+id/image_title_view"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@id/image_description_tv"
-            app:layout_constraintEnd_toEndOf="@id/card_image_iv"
-            app:layout_constraintStart_toStartOf="@id/card_image_iv" />
+            app:layout_constraintBottom_toTopOf="@id/image_description_view"
+            app:layout_constraintEnd_toEndOf="@id/card_image_view"
+            app:layout_constraintStart_toStartOf="@id/card_image_view" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/image_description_tv"
+            android:id="@+id/image_description_view"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@id/card_image_iv"
-            app:layout_constraintEnd_toEndOf="@id/card_image_iv"
-            app:layout_constraintStart_toStartOf="@id/card_image_iv" />
+            app:layout_constraintBottom_toBottomOf="@id/card_image_view"
+            app:layout_constraintEnd_toEndOf="@id/card_image_view"
+            app:layout_constraintStart_toStartOf="@id/card_image_view" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

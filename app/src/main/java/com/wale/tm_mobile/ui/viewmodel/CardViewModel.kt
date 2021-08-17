@@ -11,6 +11,7 @@ class CardViewModel @Inject constructor(
     private val cardRepository: CardRepository
 ) : ViewModel() {
 
+    // Returns api responses live data
     val getCards = cardRepository.fetchCardData().asLiveData()
 
 }

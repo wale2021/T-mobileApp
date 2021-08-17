@@ -11,17 +11,17 @@ class ImageTitleDescriptionViewHolder(private val binding: ItemImageTitleDescrip
     BaseViewHolder(binding) {
 
     override fun loadData(card: CardWrapper) = with(binding) {
-        imageTitleTv.text = card.card.title?.value
-        imageTitleTv.textSize = card.card.title?.attributes?.font?.size?.toFloat() ?: 0f
-        imageTitleTv.setTextColor(Color.parseColor(card.card.title?.attributes?.textColor))
-        imageDescriptionTv.text = card.card.description?.value
-        imageDescriptionTv.textSize = card.card.description?.attributes?.font?.size?.toFloat() ?: 0F
-        imageDescriptionTv.setTextColor(Color.parseColor(card.card.description?.attributes?.textColor))
+        imageTitleView.text = card.card.title?.value
+        imageTitleView.textSize = card.card.title?.attributes?.font?.size?.toFloat() ?: 0f
+        imageTitleView.setTextColor(Color.parseColor(card.card.title?.attributes?.textColor))
+        imageDescriptionView.text = card.card.description?.value
+        imageDescriptionView.textSize = card.card.description?.attributes?.font?.size?.toFloat() ?: 0F
+        imageDescriptionView.setTextColor(Color.parseColor(card.card.description?.attributes?.textColor))
 
-        cardImageIv.layoutParams.height = card.card.image?.size?.height ?: 0
-        cardImageIv.layoutParams.width = card.card.image?.size?.width ?: 0
-        cardImageIv.requestLayout()
-        cardImageIv.loadImage(card.card.image?.url ?: "")
+        cardImageView.layoutParams.height = card.card.image?.size?.height ?: 0
+        cardImageView.layoutParams.width = card.card.image?.size?.width ?: 0
+        cardImageView.requestLayout()
+        cardImageView.loadImage(card.card.image?.url ?: "")
     }
 
     companion object {

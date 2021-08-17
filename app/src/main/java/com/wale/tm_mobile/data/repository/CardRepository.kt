@@ -12,6 +12,7 @@ import javax.inject.Singleton
 @Singleton
 class CardRepository @Inject constructor(private val cardService: CardService) {
 
+    //It returns data once is successful else return error once is not successful
     fun fetchCardData() = flow {
         emit(Resource.Loading)
         try {

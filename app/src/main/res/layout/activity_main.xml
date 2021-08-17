@@ -7,7 +7,7 @@
     tools:context=".ui.view.CardActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/card_rv"
+        android:id="@+id/card_recycler_view"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
